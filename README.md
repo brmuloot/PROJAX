@@ -10,7 +10,15 @@ pip install requirements.txt
 
 ## How to create an admin account
 ```bash
-python manage.py runserver
+python manage.py makemigrations blob
+```
+
+```bash
+python manage.py migrate
+```
+
+```bash
+python manage.py createsuperuser
 ```
 Choose you username, email adress, and your password
 
