@@ -18,4 +18,10 @@
     <p style="text-align:center; font-weight: bold;"><a href="{% url 'authentication:login' %}">Login / Logout</a></p>
 </footer>
 
+<footer>
+    {% block footer %}
+        <p>The Projax by Brice, Lakhbir, Laurence, Rémi</p>
+    {% endblock %}
+</footer>
+
 </html>

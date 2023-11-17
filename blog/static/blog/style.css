@@ -1,5 +1,5 @@
 body {
-    background-color: #d4bbbb;
+    background-color: #d4d0d0;
 }
 
 h3 {
@@ -24,4 +24,22 @@ li {
     column-gap: 20px;
     list-style: None;
     background-color: #e0d0d0;
+    width: 20%;
+    border-radius: 8px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+    padding: 10px;
+}
+
+li p {
+    margin: 10px;
+}
+
+footer {
+    background-color: #ae919199;
+    text-align: center;
+    padding: center;
+    padding: 10px;
+    margin-top: 60px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
