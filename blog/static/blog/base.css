@@ -1,0 +1,13 @@
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    background-color: #d4bbbb;
+}
+
+footer {
+    padding: 22px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
+}

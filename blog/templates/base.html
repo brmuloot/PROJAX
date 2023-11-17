@@ -5,6 +5,7 @@
 
 <head>
     <title>{% block title %}Blog{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'blog/base.css' %}">
     <link rel="stylesheet" href="{% static 'blog/style.css' %}">
     <meta charset="utf-8">
 </head>
@@ -12,5 +13,9 @@
 <body>
     {% block body %}{% endblock %}
 </body>
+<footer>
+    <hr>
+    <p style="text-align:center; font-weight: bold;"><a href="{% url 'authentication:login' %}">Login / Logout</a></p>
+</footer>
 
 </html>

@@ -16,7 +16,7 @@
 </fieldset>
 <a href="{% url 'blog:index' %}">Accueil</a>
 <a href="{% url 'blog:add-comment' post.id %}">Commenter</a>
-<a href="{% url 'blog:add-like' post.id %}">{% if post.liked_by_ %}Un{% endif %}like</a>
+<a href="{% url 'blog:add-like' post.id %}">Like</a>
 
 
 <div class="comments">

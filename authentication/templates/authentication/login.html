@@ -1,7 +1,33 @@
-<p>{{ message }}</p>
-<form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
+{% load static %}
 
-    <button type="submit">Submit</button>
-</form>
+<head>
+    <title>{% block title %}Blog{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'authentication/login.css' %}">
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <div class="login">
+        <div class="box">
+            <h3>Login / Logout</h3>
+            <p>{{ message }}</p>
+
+            {% if user.is_authenticated %}
+            <p>Bienvenue, {{ user.username }}</p>
+            <form action="{% url 'authentication:logout' %}" method="post">
+                {% csrf_token %}
+
+                <button type="submit">Logout</button>
+
+            </form>
+            <a href="{% url 'blog:index' %}">Voir les posts</a>
+            {% else %}
+            <form method="post" action="{% url 'authentication:login' %}">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit">Login</button>
+            </form>
+            {% endif %}
+        </div>
+    </div>
+</body>
