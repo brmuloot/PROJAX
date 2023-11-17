@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}Detail{% endblock %}
+
+{% block body %}
+{% csrf_token %}
+<fieldset>
+    <legend>
+        <h2>{{ post.title }}</h2>
+    </legend>
+    {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+    {{post.content}}
+</fieldset>
+<a href="{% url 'blog:index' %}">Accueil</a>
+<a href="{% url 'blog:add-comment' post.id %}">Commenter</a>
+
+<div class="comments">
+    <h3>Réactions des internautes</h3>
+    {%for comment in comments%}
+    <p><i>{{comment.author}}, le {{comment.pub_date}}</i></p>
+    <p>{{comment.text}}</p>
+    {%endfor %}
+
+</div>
+{% endblock %}

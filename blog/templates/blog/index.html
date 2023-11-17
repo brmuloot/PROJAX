@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %}Liste des posts{% endblock %}
+
+{% block body %}
+<h3>Liste des posts récents</h3>
+{% if posts_list %}
+<ul>
+    {% for post in posts_list %}
+    <li><a href="{% url 'blog:detail' post.id %}">{{ post.title }}</a></li>
+    </a></li>
+    {% endfor %}
+</ul>
+{% else %}
+<p>No topic are available.</p>
+{% endif %}
+{% endblock %}
+
+
+<h3>Liste des questions</h3>
+{% if latest_question_list %}
+<ul>
+    {% for question in latest_question_list %}
+
+    </a></li>
+    {% endfor %}
+</ul>
+{% else %}
+<p>No polls are available.</p>
+{% endif %}
