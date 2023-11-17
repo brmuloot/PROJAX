@@ -10,9 +10,14 @@
     </legend>
     {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
     {{post.content}}
+    {% if post.liked_by.count > 0%}
+    <h3> ❤️ {{ post.liked_by.count }}</h3>
+    {% endif %}
 </fieldset>
 <a href="{% url 'blog:index' %}">Accueil</a>
 <a href="{% url 'blog:add-comment' post.id %}">Commenter</a>
+<a href="{% url 'blog:add-like' post.id %}">{% if post.liked_by_ %}Un{% endif %}like</a>
+
 
 <div class="comments">
     <h3>Réactions des internautes</h3>
