@@ -24,4 +24,19 @@ li {
     column-gap: 20px;
     list-style: None;
     background-color: #e0d0d0;
+    width: 20%;
+    border-radius: 8px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+    padding: 10px;
+}
+
+li p {
+    margin: 10px;
+}
+
+p {
+    background-color: #d4bbbb99;
+    text-align: center;
+    padding: center;
 }

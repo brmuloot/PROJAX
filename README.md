@@ -5,7 +5,7 @@
 ```bash
 conda create -n django
 conda activate django
-pip install requirements.txt
+pip install -r requirements.txt
 ```
 
 ## How to create an admin account
