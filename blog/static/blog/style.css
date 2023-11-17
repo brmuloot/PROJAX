@@ -1,5 +1,5 @@
 body {
-    background-color: #d4bbbb;
+    background-color: #d4d0d0;
 }
 
 h3 {
@@ -35,8 +35,11 @@ li p {
     margin: 10px;
 }
 
-p {
-    background-color: #d4bbbb99;
+footer {
+    background-color: #ae919199;
     text-align: center;
     padding: center;
+    padding: 10px;
+    margin-top: 60px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
