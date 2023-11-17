@@ -36,3 +36,9 @@ h3 {
     letter-spacing: 1px;
     font-size: 1.4em;
 }
+
+.message {
+    color: red;
+    font-weight: bold;
+
+}

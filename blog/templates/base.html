@@ -13,14 +13,13 @@
 <body>
     {% block body %}{% endblock %}
 </body>
-<footer>
-    <hr>
-    <p style="text-align:center; font-weight: bold;"><a href="{% url 'authentication:login' %}">Login / Logout</a></p>
-</footer>
+
 
 <footer>
     {% block footer %}
-        <p>The Projax by Brice, Lakhbir, Laurence, Rémi</p>
+    <hr>
+    <p>The Projax by Brice, Lakhbir, Laurence, Rémi</p>
+    <p style="text-align:center; font-weight: bold;"><a href="{% url 'authentication:login' %}">Login / Logout</a></p>
     {% endblock %}
 </footer>
 
