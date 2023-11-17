@@ -1,5 +1,5 @@
 body {
-    background-color: #FFF8F0;
+    background-color: #d4d0d0;
 }
 
 h3 {
@@ -18,12 +18,11 @@ li {
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     gap: 20px;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 20px;
     column-count: 3;
     column-gap: 20px;
     list-style: None;
-    background-color:#F3E5AB;
+    background-color: #e0d0d0;
     width: 20%;
     border-radius: 8px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -36,10 +35,51 @@ li p {
 }
 
 footer {
-    background-color: #F3E5AB;
+    background-color: #d4d0d0;
     text-align: center;
-    padding: center;
-    padding: 10px;
-    margin-top: 60px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    padding: 14px 16px;
+    text-decoration: none;
 }
+
+form {
+    background-color: #f3e5ab;
+    padding: 30px;
+    width: 70%;
+    border: 1px solid #000000;
+    transition: 0.3s;
+    border-radius: 1vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+button {
+    background-color: #00008B; /* The background color of the button */
+    color: white; /* Text color */
+    padding: 14px 20px; /* Some padding */
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+    font-size: 20px;
+}
+button:hover{
+    background-color: #00008ba4;
+}
+textarea {
+    resize: none;
+    height: 100px;
+    max-width: 100%;
+    min-height: 100px;
+    overflow: hidden;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+    font-size: 20px;
+}
+
