@@ -2,12 +2,18 @@ body {
     min-height: 100vh;
     display: grid;
     grid-template-rows: auto 1fr auto;
-    background-color: #d4bbbb;
+    background-color: #f3e5ab;
 }
 
 footer {
-    padding: 22px;
-    font-size: 20px;
+    background-color: #f3e5ab;
     text-align: center;
-    font-weight: 500;
+    padding: center;
+    padding: 10px;
+    margin-top: 60px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+p a:hover{
+    color: #00000075;
 }

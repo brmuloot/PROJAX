@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+
 {% block body %}
 <form action="{% url 'blog:submit_comment' post.id %}" method="post">
     {% csrf_token %}
