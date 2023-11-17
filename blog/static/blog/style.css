@@ -1,0 +1,27 @@
+body {
+    background-color: #d4bbbb;
+}
+
+h3 {
+    font-size: 24px;
+    text-align: center;
+    font-family: 'Open sans', sans-serif;
+    margin-top: 120px;
+    margin-bottom: 50px;
+    border: 2px solid #05111e;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+li {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap :20px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    column-count: 3;
+    column-gap: 20px;
+    list-style: None;
+    background-color: #e0d0d0;
+}

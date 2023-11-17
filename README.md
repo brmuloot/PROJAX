@@ -10,7 +10,7 @@ pip install requirements.txt
 
 ## How to create an admin account
 ```bash
-python manage.py makemigrations blob
+python manage.py makemigrations
 ```
 
 ```bash
@@ -25,7 +25,7 @@ Choose you username, email adress, and your password
 ```bash
 python manage.py runserver
 ```
-Add /admin/ at the end the URL
-Complete the authentication form
-Create a new post (title, date, and time)
-Save !
+* Add /admin/ at the end the URL
+* Complete the authentication form
+* Create a new post (title, date, and time)
+* Save !
