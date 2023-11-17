@@ -14,7 +14,6 @@ def login_page(request):
                 username=form.cleaned_data['username'],
                 password=form.cleaned_data['password'],
             )
-            print(user)
             if user is not None:
                 login(request, user)
                 message = f'Hello {user.username}! You have been logged in'
