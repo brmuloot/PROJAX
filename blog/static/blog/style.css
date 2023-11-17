@@ -1,5 +1,5 @@
 body {
-    background-color: #d4d0d0;
+    background-color: #FFF8F0;
 }
 
 h3 {
@@ -23,7 +23,7 @@ li {
     column-count: 3;
     column-gap: 20px;
     list-style: None;
-    background-color: #e0d0d0;
+    background-color:#F3E5AB;
     width: 20%;
     border-radius: 8px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -36,7 +36,7 @@ li p {
 }
 
 footer {
-    background-color: #d4d0d0;
+    background-color: #F3E5AB;
     text-align: center;
     padding: center;
     padding: 10px;
